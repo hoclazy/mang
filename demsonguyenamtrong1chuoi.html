@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số nguyên âm trong 1 chuỗi</title>
+</head>
+<body>
+<script>
+    let a = [1,2,3,4,-5,-6,-7,8,9];
+    let dem = 0;
+    for(let i = 0; i<a.length; i++) {
+        if( a[i] < 0) {
+            dem = dem+1;
+        }
+    }
+    alert('dem' +dem);
+</script>
+</body>
+</html>

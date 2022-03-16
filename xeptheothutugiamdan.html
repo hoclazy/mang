@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xếp và hiển thị mảng theo thứ tự giảm dần</title>
+</head>
+<body>
+<script>
+    let c = [1,2,4,5,7,9,10];
+    let tg = 0;
+    for(let i = 0; i<c.length-1; i++) {
+        for(let j = i +1; j<c.length; j++) {
+            if(c[i] < c[j]) {
+                tg = c[i];
+                c[i] = c[j];
+                c[j] = tg;
+            }
+        }
+    }
+    document.write(c);
+</script>
+</body>
+</html>

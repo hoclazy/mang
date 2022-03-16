@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra xem thuộc mảng hay không</title>
+</head>
+<body>
+<script>
+    let a = [1,2, 2, 3, 4, 5, 6, 7, 8, 9];
+    let x = prompt('nhập x');
+    let dem = 0;
+    let sum = 0;
+    let tich = 1;
+    let max = a[0];
+    let indexOf = -1;
+    for (let i = 0; i < a.length; i++) {
+//document.write(a[i] +',');
+
+        if (a[i] % 2 == 0) {
+            // document.write('các phần tử chẵn là: ' +a[i] +'<br>');
+            tich *= a[i];
+        }
+
+
+        sum += a[i];
+
+
+        if (a[i] > max) {
+            max = a[i];
+        }
+
+
+        if (x == a[i]) {
+            indexOf = i;
+        }
+
+        if( x == a[i]){
+            dem++;
+        }
+
+    }
+
+    document.write('sum= ' + sum + '<br>');
+    document.write('tich= ' + tich + '<br>');
+    document.write('max ' + max);
+    document.write('số lượng của x trong mảng là: ' +dem)
+    document.write('vị trí' +i)
+</script>
+</body>
+</html>

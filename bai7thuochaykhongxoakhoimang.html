@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5];
+    let v = +prompt("Nhap v");
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] == v) {
+            a.splice(i, 1);
+        }
+    }
+    document.write(a);
+</script>
+</body>
+</html>
